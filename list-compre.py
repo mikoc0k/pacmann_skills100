@@ -14,3 +14,7 @@ print("cara konv- : ",daftar_gaji_baru)
 # cara List comprehension
 daftar_gaji_baru_compre = [gaji for gaji in daftar_gaji]
 print("cara list compre- : ",daftar_gaji_baru_compre)
+
+# dengan List comprehension, kita bisa langsung memanipulasi output
+daftar_gaji_bagi_5 = [gaji/5 for gaji in daftar_gaji]
+print("hasil daftar gaji / 5 : ",daftar_gaji_bagi_5)
