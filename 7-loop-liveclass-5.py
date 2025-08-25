@@ -32,3 +32,11 @@ for barang, jumlah in daftar_harga:
     if jumlah < 5:
         keranjang_kecil.append(barang)
 print(f'keranjang_kecil: {keranjang_kecil}')
+
+# 5c
+keranjang_kopi = []
+for item,count in daftar_harga:
+    if 'kopi' in item:
+        keranjang_kopi.append(item)
+print(keranjang_kopi)
+    
