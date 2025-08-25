@@ -19,9 +19,16 @@ daftar_harga = [
     ['kopi kapal karam', 12],
     ['sabun kehidupan', 7],
     ['sampo matahari', 11],
-    ['lombok cap gajah', 3],
+    ['lombok', 3],
     ['bawang merah', 2],
     ['bawang putih', 3],
     ['kecap EFG', 6]
 ]
 print(daftar_harga)
+
+# 5b
+keranjang_kecil = []
+for barang, jumlah in daftar_harga:
+    if jumlah < 5:
+        keranjang_kecil.append(barang)
+print(f'keranjang_kecil: {keranjang_kecil}')
