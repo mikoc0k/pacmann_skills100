@@ -40,3 +40,12 @@ def diskon(promo,harga):
 
 diskon(True,100_000)
 diskon(False,100_000)
+
+# fungsi dengan loop dan list
+
+def daftar_kriteria():
+    list_kriteria = ["Menggunakan komputer", "Menggunakan laptop", "Menggunakan tablet"]
+    for index in range(len(list_kriteria)):
+        print(f"{index+1}. {list_kriteria[index]}")
+
+daftar_kriteria()
