@@ -79,16 +79,16 @@ def jadwal_catering(hari):
   if (hari == "Senin" or hari == "senin"):
     print("Menu makan hari Senin adalah Nasi Kuning.")
 
-  elif hari == "Selasa" or hari == "selasa" :
+  elif (hari == "Selasa" or hari == "selasa") :
     print("Menu makan hari Selasa adalah Salad Sayur.")
 
-  elif hari == "Rabu" or hari == "rabu" :
+  elif (hari == "Rabu" or hari == "rabu") :
     print("Menu makan hari Rabu adalah Soto Ayam.")
 
-  elif hari == "Kamis" or hari == "kamis" :
+  elif (hari == "Kamis" or hari == "kamis") :
     print("Menu makan hari Kamis adalah Nasi Goreng.")
 
-  elif hari == "Jumat" or hari == "jumat" :
+  elif (hari == "Jumat" or hari == "jumat") :
     print("Menu makan hari Jumat adalah Rawon.")
     
   else :
