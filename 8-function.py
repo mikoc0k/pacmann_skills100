@@ -14,3 +14,17 @@ def fungsi_teks():
     print('saya sedang belajar fungsi di python')
 
 fungsi_teks()
+
+# fungsi dengan parameter = inputan fungsi
+
+def identf(nama):
+    print(nama)
+
+identf("jowokee")
+
+# fungsi dengan beberapa params
+
+def identfs(nama,asal,umur):
+    print(f'nama saya {nama} asal {asal} dan umur saya {umur} tahun')
+
+identfs("owok","neraka", 99)
