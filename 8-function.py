@@ -28,3 +28,15 @@ def identfs(nama,asal,umur):
     print(f'nama saya {nama} asal {asal} dan umur saya {umur} tahun')
 
 identfs("owok","neraka", 99)
+
+# fungsi return feat looping
+def diskon(promo,harga):
+    if promo == True:
+        potongan = 0.5
+        total_harga = int(harga*potongan)
+        print(total_harga)
+    else:
+        print(harga)
+
+diskon(True,100_000)
+diskon(False,100_000)
