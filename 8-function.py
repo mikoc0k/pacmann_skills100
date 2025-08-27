@@ -95,3 +95,29 @@ def jadwal_catering(hari):
     print("Menu makan tidak tersedia.")
 
 """
+
+# argumen harus diisi berurutan sesuai dengan parameter fungsinya
+# namun dapat diisi secara bebas urutan dengan cara keyword argument
+
+def idtf(nama, asal, umur):
+    print(f'nama saya {nama} asal {asal} dan umur saya {umur} tahun')
+
+idtf(umur=669, nama="owok", asal="neraka")
+
+# mini exercise
+
+def pegawai(nama, departemen, tahun):
+    print(f"{nama}, merupakan karyawan dari departemen {departemen} sejak tahun {tahun}")
+
+pegawai("chaidar", "publik relasi", 2014)
+pegawai(departemen="publik relasi", tahun=2014, nama="chaidar")
+
+# default Value
+# parameter dg nilai konstan
+
+def area_circle(jari_jari, phi=3.14):
+    luas = phi * jari_jari * jari_jari
+    print(f"luas lingkaran dengan jari-jari {jari_jari} adalah {luas}")
+
+area_circle(10)
+area_circle(10, 3.14)
