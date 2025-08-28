@@ -120,4 +120,3 @@ def area_circle(jari_jari, phi=3.14):
     print(f"luas lingkaran dengan jari-jari {jari_jari} adalah {luas}")
 
 area_circle(10)
-area_circle(10, 3.14)
