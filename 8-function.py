@@ -128,3 +128,32 @@ def luas(panjang,lebar=5):
     print(f"luas persegi panjang dengan panjang {panjang} dan lebar {lebar} adalah {luas}")
 
 luas(3)
+
+# fungsi yang mengembalikan nilai
+# dengan mengembalikan nilai, nilai tsb bisa disimpan dan diolah kembali
+
+def areapersegi(p,l):
+    luas = p * l
+    return luas
+
+infoarea = areapersegi(5,4)
+print(infoarea)
+
+# mini exercise
+
+def luas_segitiga(alas,tinggi):
+    area = 0.5 * alas * tinggi
+    return area
+datasegitiga = luas_segitiga(13,17)
+print(datasegitiga)
+
+def hitung_profit(jumlah,hargajual,biaya):
+    total_sales = jumlah * hargajual
+    total_biaya = jumlah * biaya
+    total_profit = total_sales - total_biaya
+    return total_profit
+
+berapa_profit = hitung_profit(2,100_000,75_000)
+print(berapa_profit)
+
+# ------------------------------------------ #
