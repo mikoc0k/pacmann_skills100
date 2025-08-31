@@ -157,3 +157,71 @@ berapa_profit = hitung_profit(2,100_000,75_000)
 print(berapa_profit)
 
 # ------------------------------------------ #
+
+# arbitrary argument (*args)
+
+# def nama_fungsi (*args):
+# kode
+
+# fungsi arbitrary digunakan untuk argumen yang jumlahnya belum diketahui
+# contoh :
+def pelanggan(*nama):
+    print(f"pelanggan hari ini- {nama}")
+
+pelanggan("joko","kowi","cem","kontoI")
+
+# contoh lain
+def nama_buah(*buah):
+    print(f"nama buah- {buah[-1]}")
+
+nama_buah("apel","mangga","jeruk","semangka","durian","manggis")
+
+# contoh dicampur loop
+def user(*name):
+    for list in name:
+        print(f"pelanggan hari ini- {list}")
+
+user("joko","kowi","cem","kontoI")
+
+# arbitrary keyword args (**kwargs):
+# kode
+
+# arbitrary keyword menampilkan pasangan nama & nilai
+
+# contoh
+
+def chart(**item):
+    print(item)
+
+chart(nama="farhan kebab", belanja=100_000)
+chart(nama="azis widodo", belanja=134_000)
+
+# jika ingin menampilkan salah satu dr key/value 
+def kart(**item):
+    print(item["nama"])
+    print(item["belanja"])
+
+
+kart(nama="farhan kebab", belanja=100_000)
+kart(nama="azis widodo", belanja=134_000)
+
+# perbedaan *args dan **kwargs
+# kwargs menggunakan 2 **
+# kwargs menerima dictionary, args menerima list
+
+# contoh pakai args lagi
+def kriteria(*daftar):
+    for value in range(len(daftar)):
+        print(f"{value+1}. {daftar[value]}")
+
+kriteria("menguasai komputer", "menggunakan laptop", "menggunakan table")
+
+# contoh pakai kwargs lagi
+def daftar_menu(**menus):
+    for key,value in menus.items():
+        """
+        menus.items() adalah metode dictionary utk menghasilkan key dan value
+        """
+        print(f"{key} : {value}")
+
+daftar_menu(pecel = 30_000, nasduk = 22_500, tahu_bulat = 12_000)
