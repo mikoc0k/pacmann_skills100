@@ -225,3 +225,39 @@ def daftar_menu(**menus):
         print(f"{key} : {value}")
 
 daftar_menu(pecel = 30_000, nasduk = 22_500, tahu_bulat = 12_000)
+
+# mini exercise
+def calend(*day):
+    print(f'hari {day[4]}')
+
+calend("senin","selasa","rabu","kamis","jumat","sabtu","minggu")
+
+# mini exercise
+
+def produk(**data):
+    for key,value in data.items():
+        print(f"{key} : Rp.{value}")
+
+produk(bathup=12_000_000)
+produk(jam=11_000_000)
+produk(sempax=250_000)
+
+# beda return dan print di fungsi
+# return hanya hidup di dalam fungsi
+# return hanya ada 1 didalam fungsi, dan setelah menjalankan return, eksekusi berhenti
+# return dapat simpan nilai utk digunakan kembali
+
+# contoh return dalam fungsi
+def kali(a,b):
+    area = a*b
+    return area
+
+# setelah return dijalankan, kode selanjutnya tidak alias eksekusi berhenti di return
+def tambah(a,b):
+    total = a+b
+    return total # eksekusi berhenti disini
+    print("turunkan jowoki") # tidak dijalankan
+
+print(tambah(1,2))
+final = tambah(9,3) # contoh return utk simpan nilai. nilai disimpan oleh return ke var final
+print(final)
