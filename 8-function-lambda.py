@@ -26,3 +26,12 @@ print(harga_diskon(2,1_000_000,0.15))
 hitung = lambda num: num+1 if num < 10 else 2*num
 print(hitung(10))
 print(hitung(5))
+
+# mini exercise
+cuti = lambda lembur, bolos: print("boleh cuti") if lembur >=8 and bolos < 4 else print("no cuti !")
+cuti(10,3)
+cuti(4,5)
+
+# mini exercise
+margin_kotor = lambda laba,incom : print(f" margin kotor - {int(laba / incom * 100)}%")
+margin_kotor(150_000,250_000)
