@@ -18,5 +18,3 @@ def hitung_rasio(deret):
     return (f"{pos/total}\n{neg/total}\n{nul/total}")
 
 print(hitung_rasio(numbers))
-
-#2c
