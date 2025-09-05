@@ -30,3 +30,34 @@ def bunga_tabungan(saldo,bunga):
 def bunga_anuitas(sisa_pinjaman, bunga):
     cicilan = sisa_pinjaman * bunga * 30
     return cicilan
+
+# cara mengimpor modul
+# import nama_modul
+# contoh :
+# import konversi_jam
+
+# cara menggunakan fungsi dr modul yang diimport
+# konversi_jam.hari(jam)
+
+# ata cara kedua, mengimpor fungsi tertentu dari modul
+# from nama_modul import nama_fungsi
+# nama_fungsi()
+
+# dengan cara import modul tertentu, kita juga dapat memanggil fungsi tertentu
+# dipisahkan dengan koma
+
+# cara lain, dengan mengimpor semua fungsi
+# from nama_modul import *
+
+# mengganti nama modul dan fungsi jika terlalu panjang
+# dengan menggunakan alias "as"
+
+# import nama_modul as nama_alias
+
+# contoh mengubah nama fungsi
+# from nama_modul import nama_fungsi as alias_fungsi
+
+# mini exercise
+
+# from modul_video_learning_materi_8.perhitungan_penjualan as penjualan import *
+# profit(150,350_000,100_000)
