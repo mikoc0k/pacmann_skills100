@@ -1,4 +1,4 @@
-# 3a
+# 3a, 3b
 voucher = 0.45
 def hitung(*harga):
     total_sebelum_voucher = sum(harga)
@@ -7,3 +7,5 @@ def hitung(*harga):
     print(f"setelah DISKON: {total}")
     return total
 print(hitung(200_000,300_000,400_000,500_000,600_000,700_000))
+
+# 3b
